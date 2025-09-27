@@ -95,9 +95,20 @@ Employee JSON Örneği :
 
 <br>
 
+## :floppy_disk: H2 Veritabanı Bağlantısı
+
+v2 API, H2 veritabanı kullanırken ilgili veritabanı bağlantısı `application.properties` içerisinde tanımlanmıştır.
+
+- Proje içerisindeki H2 veritabı dosyası : `employeedb` 
+- H2 web konsolu ile veritabanına erişim : http://localhost:8080/h2-console
+	- Kullanıcı Adı : sa
+	- Şifre : password
+
+> NOT : Bu ayarlar geliştirme ortamı içindir ve projeye özgüdür. Başka bir ortamda güvenlik nedeniyle değiştirilmelidir.
+
+<br>
+
 ## :key: Önemli Notlar
 - v1 sürümü geçici veri saklar; uygulama kapandığında tüm veriler silinir.
 - v2 sürümü H2 veritabanına bağlıdır ve veriler kalıcıdır.
-- H2 web konsolu ile veritabanını inceleyebilirsiniz: http://localhost:8080/h2-console
-- Proje içerisindeki H2 veritabı dosyası : `employeedb` 
 - API JSON ve XML formatlarını destekler (Content Negotiation).
