@@ -8,6 +8,8 @@ Projede iki farklı API sürümü bulunmaktadır:
 - **v1:** in-memory veri yapısı kullanır (geçici veri saklama, uygulama kapanınca silinir)
 - **v2:** H2 veritabanı kullanır (kalıcı veri saklama, uygulama yeniden başlasa da veri korunur)
 
+<br>
+
 ## :gear: Kullanılan Teknolojiler
 - Java 17+
 - Spring Boot 3.x
@@ -16,6 +18,8 @@ Projede iki farklı API sürümü bulunmaktadır:
 - Maven
 
 > Uygulama varsayılan olarak `http://localhost:8080` adresi üzerinden çalışacaktır.
+
+<br>
 
 ## :file_folder: Proje Yapısı
 
@@ -50,6 +54,8 @@ src/main/java/com/example/demo/
 └─ DemoApplication.java			# Spring Boot uygulamasını başlatan ana sınıf
 ```
 
+<br>
+
 ## :triangular_ruler: API Endpoints
 
 ### v1 (In-memory) - `/v1/employee`
@@ -70,6 +76,8 @@ src/main/java/com/example/demo/
 | GET | `/v2/employee{id}`/{id} | ID'ye göre Employee getirir | 
 | POST | `/v2/employee` | Yeni Employee ekler | 
 
+<br>
+
 ## :floppy_disk: Model
 
 Employee JSON Örneği :
@@ -84,6 +92,8 @@ Employee JSON Örneği :
 ```
 
 > Not: empDepartment alanı API yanıtında JSON’dan gizlidir (@JsonIgnoreProperties kullanılmıştır).
+
+<br>
 
 ## :key: Önemli Notlar
 - v1 sürümü geçici veri saklar; uygulama kapandığında tüm veriler silinir.
