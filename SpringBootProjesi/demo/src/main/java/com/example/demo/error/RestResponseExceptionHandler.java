@@ -25,7 +25,7 @@ public class RestResponseExceptionHandler extends ResponseEntityExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)  // yanıtımızın HTTP durumunu değiştirmemize izin verir.
      // eger bunu kullanmayip method icindeki ile yetindeydik
      // "200 OK" statusu ile "404 Not Found" Statusunu göndermiş olurduk.
-    public ErrorMessage employeeeNotFoundExceptionHandler(EmployeeNotFoundException ex)
+    public ErrorMessage employeeNotFoundExceptionHandler(EmployeeNotFoundException ex)
     {
          return new ErrorMessage(HttpStatus.NOT_FOUND, ex.getMessage());
     }
